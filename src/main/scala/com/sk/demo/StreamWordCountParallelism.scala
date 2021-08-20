@@ -11,7 +11,7 @@ object StreamWordCountParallelism {
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
 
     // 全局设置并行度
-    //    env.setParallelism(4)
+    // env.setParallelism(4)
     // 从外部命令中提取参数，作为socket主机名和端口号
     val paramTool: ParameterTool = ParameterTool.fromArgs(args)
     val host: String = paramTool.get("host")
